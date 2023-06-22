@@ -1,0 +1,15 @@
+[package]
+name = "ckzg_test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+c-kzg = {git = "https://github.com/ethereum/c-kzg-4844", branch = "main" }
+criterion = "0.4"
+rand = "0.8.5"
+
+[[bench]]
+name = "kzg_benches"
+harness = false
